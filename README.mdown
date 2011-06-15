@@ -6,4 +6,9 @@ A variety of physics-based demos for iOS and Mac OS X.
 BounceyBalls
 ------------
 
-This is the sample code for the [Writing a Bouncing Ball Physics Simulation for iOS](http://mattrajca.com/post/3393477103/writing-a-bouncing-ball-physics-simulation-for-ios) article.
+`BounceyBalls` utilizes Chipmunk for its physics engine and Core Animation for rendering. The gravitational field of the simulation is mapped to the accelerometer, so as you tilt your iOS device, the balls rendered on-screen shift. This constitutes the sample code for the [Writing a Bouncing Ball Physics Simulation for iOS](http://mattrajca.com/post/3393477103/writing-a-bouncing-ball-physics-simulation-for-ios) article.
+
+Turbine
+-------
+
+`Turbine` is a realistic simulation of a wind turbine for iPad, implemented on top of OpenGL ES. To get the fan of the turbine to spin, simply blow into the microphone. The physics equations for rotational motion are used to control the angular velocity of the fan.
