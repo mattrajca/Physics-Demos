@@ -12,7 +12,7 @@
 #define OUTPUT_BUS 0
 #define INPUT_BUS 1
 
-#define MULTIPLIER 4
+#define FILTER 0.05f
 
 static OSStatus recordingCallback(void *inRefCon,
 								  AudioUnitRenderActionFlags *ioActionFlags,
@@ -31,8 +31,7 @@ static OSStatus recordingCallback(void *inRefCon,
 		AudioComponentDescription desc;
 		desc.componentType = kAudioUnitType_Output;
 		desc.componentSubType = kAudioUnitSubType_RemoteIO;
-		desc.componentFlags = 0;
-		desc.componentFlagsMask = 0;
+		desc.componentFlags = desc.componentFlagsMask = 0;
 		desc.componentManufacturer = kAudioUnitManufacturer_Apple;
 		
 		AudioComponent component = AudioComponentFindNext(NULL, &desc);
@@ -109,7 +108,7 @@ static OSStatus recordingCallback(void *inRefCon,
 	}
 	
 	float rms = sqrtf(sum  / inNumberFrames);
-	self->lastRMS = self->lastRMS * 0.95f + rms * 0.05f;
+	self->lastRMS = self->lastRMS * (1.0f - FILTER) + rms * FILTER;
 	
 	[self processRMS];
 	
