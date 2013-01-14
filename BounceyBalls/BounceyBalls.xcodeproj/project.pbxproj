@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C95EC84116A4AFD1002CBF91 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C95A31DA132D6B8C00A2E3EA /* Icon.png */; };
-		C95EC84216A4AFD5002CBF91 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C987CCDA16A4AED80097B44E /* Icon@2x.png */; };
 		C95EC84416A4B030002CBF91 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C95EC84316A4B030002CBF91 /* Icon@2x.png */; };
 		C95EC84616A4B036002CBF91 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C95EC84516A4B036002CBF91 /* Icon.png */; };
 		C9C930C213101D93006D5AEC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C930C113101D93006D5AEC /* QuartzCore.framework */; };
@@ -49,10 +47,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C95A31DA132D6B8C00A2E3EA /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		C95EC84316A4B030002CBF91 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		C95EC84516A4B036002CBF91 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		C987CCDA16A4AED80097B44E /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		C95EC84316A4B030002CBF91 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
+		C95EC84516A4B036002CBF91 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
 		C9C930C113101D93006D5AEC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C9D2969013100EFA003479FD /* BounceyBalls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BounceyBalls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D2969413100EFA003479FD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -143,8 +139,6 @@
 		C9D2968513100EFA003479FD = {
 			isa = PBXGroup;
 			children = (
-				C95EC84516A4B036002CBF91 /* Icon.png */,
-				C95EC84316A4B030002CBF91 /* Icon@2x.png */,
 				C9D296B413100FB2003479FD /* chipmunk */,
 				C9D2970C13100FC1003479FD /* Classes */,
 				C9D2971F13100FD4003479FD /* Supporting Files */,
@@ -284,8 +278,8 @@
 			children = (
 				C9D2971413100FCA003479FD /* BounceyBalls-Info.plist */,
 				C9D2971513100FCA003479FD /* BounceyBallsViewController.xib */,
-				C95A31DA132D6B8C00A2E3EA /* Icon.png */,
-				C987CCDA16A4AED80097B44E /* Icon@2x.png */,
+				C95EC84516A4B036002CBF91 /* Icon.png */,
+				C95EC84316A4B030002CBF91 /* Icon@2x.png */,
 				C9D2971913100FCA003479FD /* MainWindow.xib */,
 			);
 			path = Resources;
@@ -351,8 +345,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9D2971C13100FCA003479FD /* BounceyBallsViewController.xib in Resources */,
-				C95EC84116A4AFD1002CBF91 /* Icon.png in Resources */,
-				C95EC84216A4AFD5002CBF91 /* Icon@2x.png in Resources */,
 				C9D2971E13100FCA003479FD /* MainWindow.xib in Resources */,
 				C95EC84416A4B030002CBF91 /* Icon@2x.png in Resources */,
 				C95EC84616A4B036002CBF91 /* Icon.png in Resources */,
