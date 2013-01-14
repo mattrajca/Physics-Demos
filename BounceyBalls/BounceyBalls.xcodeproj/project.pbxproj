@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C95A31DB132D6B8C00A2E3EA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C95A31DA132D6B8C00A2E3EA /* icon.png */; };
+		C987CCDB16A4AED80097B44E /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C987CCDA16A4AED80097B44E /* icon@2x.png */; };
 		C9C930C213101D93006D5AEC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C930C113101D93006D5AEC /* QuartzCore.framework */; };
 		C9D2969513100EFA003479FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D2969413100EFA003479FD /* UIKit.framework */; };
 		C9D2969713100EFA003479FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D2969613100EFA003479FD /* Foundation.framework */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		C95A31DA132D6B8C00A2E3EA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		C987CCDA16A4AED80097B44E /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		C9C930C113101D93006D5AEC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C9D2969013100EFA003479FD /* BounceyBalls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BounceyBalls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D2969413100EFA003479FD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -278,6 +280,7 @@
 				C9D2971413100FCA003479FD /* BounceyBalls-Info.plist */,
 				C9D2971513100FCA003479FD /* BounceyBallsViewController.xib */,
 				C95A31DA132D6B8C00A2E3EA /* icon.png */,
+				C987CCDA16A4AED80097B44E /* icon@2x.png */,
 				C9D2971913100FCA003479FD /* MainWindow.xib */,
 			);
 			path = Resources;
@@ -346,6 +349,7 @@
 				C9D2971C13100FCA003479FD /* BounceyBallsViewController.xib in Resources */,
 				C9D2971E13100FCA003479FD /* MainWindow.xib in Resources */,
 				C95A31DB132D6B8C00A2E3EA /* icon.png in Resources */,
+				C987CCDB16A4AED80097B44E /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
