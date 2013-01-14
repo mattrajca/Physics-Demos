@@ -107,6 +107,7 @@
 	layer.delegate = self;
 	layer.position = pt;
 	layer.bounds = CGRectMake(0.0f, 0.0f, r * 2, r * 2);
+	layer.contentsScale = [UIScreen mainScreen].scale;
 	[layer setValue:[self ballColor] forKey:BK_COLOR_KEY];
 	
 	[[self.view layer] addSublayer:layer];
