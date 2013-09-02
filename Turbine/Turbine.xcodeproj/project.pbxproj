@@ -15,6 +15,7 @@
 		C95ED8B617D4F645007EF4E1 /* Base@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C95ED8B317D4F644007EF4E1 /* Base@2x.png */; };
 		C95ED8B717D4F645007EF4E1 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C95ED8B417D4F644007EF4E1 /* Icon@2x.png */; };
 		C95ED8B817D4F645007EF4E1 /* Turbine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C95ED8B517D4F645007EF4E1 /* Turbine@2x.png */; };
+		C95ED8BA17D51905007EF4E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C95ED8B917D51905007EF4E1 /* Images.xcassets */; };
 		C96C51D81388299A00784187 /* TurbineAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C96C51D31388299A00784187 /* TurbineAppDelegate.m */; };
 		C96C51D91388299A00784187 /* TurbineView.m in Sources */ = {isa = PBXBuildFile; fileRef = C96C51D51388299A00784187 /* TurbineView.m */; };
 		C96C51DA1388299A00784187 /* TurbineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96C51D71388299A00784187 /* TurbineViewController.m */; };
@@ -46,6 +47,7 @@
 		C95ED8B317D4F644007EF4E1 /* Base@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Base@2x.png"; sourceTree = "<group>"; };
 		C95ED8B417D4F644007EF4E1 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		C95ED8B517D4F645007EF4E1 /* Turbine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Turbine@2x.png"; sourceTree = "<group>"; };
+		C95ED8B917D51905007EF4E1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Turbine/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		C96C51D21388299A00784187 /* TurbineAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurbineAppDelegate.h; sourceTree = "<group>"; };
 		C96C51D31388299A00784187 /* TurbineAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TurbineAppDelegate.m; sourceTree = "<group>"; };
 		C96C51D41388299A00784187 /* TurbineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurbineView.h; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 		C96C51DB138829A300784187 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C95ED8B917D51905007EF4E1 /* Images.xcassets */,
 				C98ED40B1395B88E009CF8A1 /* Base.png */,
 				C95ED8B317D4F644007EF4E1 /* Base@2x.png */,
 				C9A7325E139732F800335D2B /* Icon.png */,
@@ -231,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C95ED8BA17D51905007EF4E1 /* Images.xcassets in Resources */,
 				C96C51E1138829A300784187 /* InfoPlist.strings in Resources */,
 				C95ED8B617D4F645007EF4E1 /* Base@2x.png in Resources */,
 				C95ED8B717D4F645007EF4E1 /* Icon@2x.png in Resources */,
@@ -315,6 +319,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -331,6 +337,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Support/Turbine-Prefix.pch";
