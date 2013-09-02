@@ -24,6 +24,6 @@ typedef void (^DrawingBlock) (CGContextRef context);
 @property (nonatomic, assign) GLfloat rotation;
 
 - (id)initWithImage:(UIImage *)image;
-- (id)initWithSize:(CGSize)size drawingBlock:(DrawingBlock)block;
+//- (id)initWithSize:(CGSize)size drawingBlock:(DrawingBlock)block;
 
 @end

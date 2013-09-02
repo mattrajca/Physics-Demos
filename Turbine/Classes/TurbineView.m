@@ -20,11 +20,11 @@
 - (void)setup {
 	_background = [[Sprite alloc] initWithImage:[UIImage imageNamed:@"Sky.jpg"]];
 	
-	_base = [[Sprite alloc] initWithImage:[UIImage imageNamed:@"Base.png"]];
+	_base = [[Sprite alloc] initWithImage:[UIImage imageNamed:@"Base"]];
 	_base.position = CGPointMake(340.0f, 348.0f);
 	
-	_turbine = [[Sprite alloc] initWithImage:[UIImage imageNamed:@"Turbine.png"]];
-	_turbine.position = CGPointMake(188.0f, 186.0f);
+	_turbine = [[Sprite alloc] initWithImage:[UIImage imageNamed:@"Turbine"]];
+	_turbine.position = CGPointMake(211.0f, 186.0f);
 }
 
 - (void)dealloc {

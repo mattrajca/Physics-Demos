@@ -42,6 +42,8 @@
 	CAEAGLLayer *layer = (CAEAGLLayer *) self.layer;
 	layer.opaque = YES;
 	
+	self.contentScaleFactor = [UIScreen mainScreen].scale;
+	
 #warning TODO: set drawable properties
 	
 	_context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES1];

@@ -34,7 +34,7 @@ static const GLshort texCoords[] = {
 			size_t width = CGImageGetWidth(spriteImage);
 			size_t height = CGImageGetHeight(spriteImage);
 			
-			_size = CGSizeMake(width, height);
+			_size = CGSizeMake(image.size.width, image.size.height);
 			
 			GLubyte *spriteData = (GLubyte *) calloc(width * height * 4, sizeof(GLubyte));
 			
@@ -54,30 +54,30 @@ static const GLshort texCoords[] = {
 	return self;
 }
 
-- (id)initWithSize:(CGSize)size drawingBlock:(DrawingBlock)block {
-	self = [super init];
-	if (self) {
-		size_t width = size.width;
-		size_t height = size.height;
-		
-		_size = CGSizeMake(width, height);
-		
-		GLubyte *spriteData = (GLubyte *) calloc(width * height * 4, sizeof(GLubyte));
-		CGColorSpaceRef cs = CGColorSpaceCreateDeviceRGB();
-		
-		CGContextRef spriteContext = CGBitmapContextCreate(spriteData, width, height,
-														   8, width * 4, cs,
-														   kCGImageAlphaPremultipliedLast);
-		CGColorSpaceRelease(cs);
-		
-		block(spriteContext);
-		CGContextRelease(spriteContext);
-		
-		[self createTextureWithSpriteData:spriteData width:width height:height];
-		free(spriteData);
-	}
-	return self;
-}
+//- (id)initWithSize:(CGSize)size drawingBlock:(DrawingBlock)block {
+//	self = [super init];
+//	if (self) {
+//		size_t width = size.width;
+//		size_t height = size.height;
+//		
+//		_size = CGSizeMake(width, height);
+//		
+//		GLubyte *spriteData = (GLubyte *) calloc(width * height * 4, sizeof(GLubyte));
+//		CGColorSpaceRef cs = CGColorSpaceCreateDeviceRGB();
+//		
+//		CGContextRef spriteContext = CGBitmapContextCreate(spriteData, width, height,
+//														   8, width * 4, cs,
+//														   kCGImageAlphaPremultipliedLast);
+//		CGColorSpaceRelease(cs);
+//		
+//		block(spriteContext);
+//		CGContextRelease(spriteContext);
+//		
+//		[self createTextureWithSpriteData:spriteData width:width height:height];
+//		free(spriteData);
+//	}
+//	return self;
+//}
 
 - (void)createTextureWithSpriteData:(GLubyte *)data width:(size_t)width height:(size_t)height {
 	glGenTextures(1, &_texture);
@@ -89,11 +89,16 @@ static const GLshort texCoords[] = {
 }
 
 - (void)draw {
+	CGFloat scaledX = _position.x * [UIScreen mainScreen].scale;
+	CGFloat scaledY = _position.y * [UIScreen mainScreen].scale;
+	CGFloat scaledW = _size.width * [UIScreen mainScreen].scale;
+	CGFloat scaledH = _size.height * [UIScreen mainScreen].scale;
+	
 	const GLshort vertexCoords[] = {
-		_position.x, _position.y,
-		_position.x + _size.width, _position.y,
-		_position.x, _position.y + _size.height,
-		_position.x + _size.width, _position.y + _size.height,
+		scaledX, scaledY,
+		scaledX + scaledW, scaledY,
+		scaledX, scaledY + scaledH,
+		scaledX + scaledW, scaledY + scaledH,
 	};
 	
 	glBindTexture(GL_TEXTURE_2D, _texture);
@@ -102,8 +107,8 @@ static const GLshort texCoords[] = {
 	glTexCoordPointer(2, GL_SHORT, 0, texCoords);
 	
 	if (_rotation) {
-		CGFloat x = (_position.x + _position.x + _size.width) / 2;
-		CGFloat y = (_position.y + _position.y + _size.height) / 2;
+		CGFloat x = (scaledX + scaledX + scaledW) / 2;
+		CGFloat y = (scaledY + scaledY + scaledH) / 2;
 		
 		glPushMatrix();
 		glTranslatef(x, y, 0.0f);
