@@ -24,7 +24,7 @@
 	_base.position = CGPointMake(340.0f, 348.0f);
 	
 	_turbine = [[Sprite alloc] initWithImage:[UIImage imageNamed:@"Turbine"]];
-	_turbine.position = CGPointMake(211.0f, 186.0f);
+	_turbine.position = CGPointMake(161.0f, 160.0f);
 }
 
 - (void)dealloc {

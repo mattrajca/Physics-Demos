@@ -42,7 +42,7 @@
 
 - (MicMonitor *)monitor {
 	if (!_monitor) {
-		_monitor = [[MicMonitorAV alloc] init];
+		_monitor = [[MicMonitorAU alloc] init];
 		_monitor.delegate = self;
 	}
 	
