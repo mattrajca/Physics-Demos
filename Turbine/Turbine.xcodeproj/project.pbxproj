@@ -12,6 +12,9 @@
 		C93163331381DEEA0021FBF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93163321381DEEA0021FBF6 /* UIKit.framework */; };
 		C93163351381DEEA0021FBF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93163341381DEEA0021FBF6 /* Foundation.framework */; };
 		C93163371381DEEA0021FBF6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93163361381DEEA0021FBF6 /* CoreGraphics.framework */; };
+		C95ED8B617D4F645007EF4E1 /* Base@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C95ED8B317D4F644007EF4E1 /* Base@2x.png */; };
+		C95ED8B717D4F645007EF4E1 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C95ED8B417D4F644007EF4E1 /* Icon@2x.png */; };
+		C95ED8B817D4F645007EF4E1 /* Turbine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C95ED8B517D4F645007EF4E1 /* Turbine@2x.png */; };
 		C96C51D81388299A00784187 /* TurbineAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C96C51D31388299A00784187 /* TurbineAppDelegate.m */; };
 		C96C51D91388299A00784187 /* TurbineView.m in Sources */ = {isa = PBXBuildFile; fileRef = C96C51D51388299A00784187 /* TurbineView.m */; };
 		C96C51DA1388299A00784187 /* TurbineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96C51D71388299A00784187 /* TurbineViewController.m */; };
@@ -40,6 +43,9 @@
 		C93163321381DEEA0021FBF6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C93163341381DEEA0021FBF6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C93163361381DEEA0021FBF6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C95ED8B317D4F644007EF4E1 /* Base@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Base@2x.png"; sourceTree = "<group>"; };
+		C95ED8B417D4F644007EF4E1 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		C95ED8B517D4F645007EF4E1 /* Turbine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Turbine@2x.png"; sourceTree = "<group>"; };
 		C96C51D21388299A00784187 /* TurbineAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurbineAppDelegate.h; sourceTree = "<group>"; };
 		C96C51D31388299A00784187 /* TurbineAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TurbineAppDelegate.m; sourceTree = "<group>"; };
 		C96C51D41388299A00784187 /* TurbineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurbineView.h; sourceTree = "<group>"; };
@@ -153,11 +159,14 @@
 			isa = PBXGroup;
 			children = (
 				C98ED40B1395B88E009CF8A1 /* Base.png */,
+				C95ED8B317D4F644007EF4E1 /* Base@2x.png */,
 				C9A7325E139732F800335D2B /* Icon.png */,
+				C95ED8B417D4F644007EF4E1 /* Icon@2x.png */,
 				C96C51DC138829A300784187 /* InfoPlist.strings */,
-				C98ED40E1395C38A009CF8A1 /* Turbine.png */,
 				C96C51DE138829A300784187 /* Sky.jpg */,
 				C96C51DF138829A300784187 /* Turbine-Info.plist */,
+				C98ED40E1395C38A009CF8A1 /* Turbine.png */,
+				C95ED8B517D4F645007EF4E1 /* Turbine@2x.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -223,7 +232,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C96C51E1138829A300784187 /* InfoPlist.strings in Resources */,
+				C95ED8B617D4F645007EF4E1 /* Base@2x.png in Resources */,
+				C95ED8B717D4F645007EF4E1 /* Icon@2x.png in Resources */,
 				C96C51E2138829A300784187 /* Sky.jpg in Resources */,
+				C95ED8B817D4F645007EF4E1 /* Turbine@2x.png in Resources */,
 				C98ED40C1395B88E009CF8A1 /* Base.png in Resources */,
 				C98ED40F1395C38A009CF8A1 /* Turbine.png in Resources */,
 				C9A7325F139732F800335D2B /* Icon.png in Resources */,
