@@ -2,14 +2,16 @@
 //  TurbineViewController.h
 //  Turbine
 //
-//  Copyright Matt Rajca 2011. All rights reserved.
+//  Copyright Matt Rajca 2011 - 2013. All rights reserved.
 //
 
-@class MicMonitor, TurbineView;
+#import <SpriteKit/SpriteKit.h>
+
+@class MicMonitor;
 
 @interface TurbineViewController : UIViewController {
   @private
-	TurbineView *_turbineView;
+	SKView *_turbineView;
 	MicMonitor *_monitor;
 }
 

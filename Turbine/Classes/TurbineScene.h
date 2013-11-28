@@ -1,12 +1,11 @@
 //
-//  TurbineView.h
+//  TurbineScene.h
 //  Turbine
 //
-//  Copyright Matt Rajca 2011. All rights reserved.
+//  Copyright Matt Rajca 2011 - 2013. All rights reserved.
 //
 
-#import "RenderView.h"
-#import "Sprite.h"
+#import <SpriteKit/SpriteKit.h>
 
 typedef enum {
 	TurbinePhaseIdle = 0,
@@ -15,14 +14,12 @@ typedef enum {
 	TurbinePhaseDeaccelerating
 } TurbinePhase;
 
-@interface TurbineView : RenderView {
+@interface TurbineScene : SKScene {
   @private
-	Sprite *_background, *_base, *_turbine;
+	SKSpriteNode *_background, *_base, *_turbine;
 	TurbinePhase _phase;
 	CGFloat _t, _lastV, _d;
 }
-
-@property (nonatomic, readonly) TurbinePhase phase;
 
 - (void)accelerate;
 - (void)deaccelerate;

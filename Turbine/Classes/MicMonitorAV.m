@@ -2,7 +2,7 @@
 //  MicMonitorAV.m
 //  Turbine
 //
-//  Copyright Matt Rajca 2011. All rights reserved.
+//  Copyright Matt Rajca 2011 - 2013. All rights reserved.
 //
 
 #import "MicMonitorAV.h"
@@ -32,21 +32,14 @@
 	return self;
 }
 
-- (void)dealloc {
-	[_recorder release];
-	[_timer release];
-	
-	[super dealloc];
-}
-
 - (void)start {
 	[_recorder record];
 	
-	_timer = [[NSTimer scheduledTimerWithTimeInterval:0.05f
-											   target:self
-											 selector:@selector(tick)
-											 userInfo:nil
-											  repeats:YES] retain];
+	_timer = [NSTimer scheduledTimerWithTimeInterval:0.05f
+											  target:self
+											selector:@selector(tick)
+											userInfo:nil
+											 repeats:YES];
 }
 
 - (void)tick {

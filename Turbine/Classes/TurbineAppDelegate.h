@@ -2,7 +2,7 @@
 //  TurbineAppDelegate.h
 //  Turbine
 //
-//  Copyright Matt Rajca 2011. All rights reserved.
+//  Copyright Matt Rajca 2011 - 2013. All rights reserved.
 //
 
 @class TurbineViewController;

@@ -2,7 +2,7 @@
 //  MicMonitorAU.m
 //  Turbine
 //
-//  Copyright Matt Rajca 2011. All rights reserved.
+//  Copyright Matt Rajca 2011 - 2013. All rights reserved.
 //
 
 #import "MicMonitorAU.h"
@@ -62,7 +62,7 @@ static OSStatus recordingCallback(void *inRefCon,
 		
 		AURenderCallbackStruct callback;
 		callback.inputProc = &recordingCallback;
-		callback.inputProcRefCon = self;
+		callback.inputProcRefCon = (__bridge void *)(self);
 		
 		status = AudioUnitSetProperty(_au, kAudioOutputUnitProperty_SetInputCallback, kAudioUnitScope_Global,
 									  OUTPUT_BUS, &callback, sizeof(callback));
@@ -70,7 +70,7 @@ static OSStatus recordingCallback(void *inRefCon,
 		status = AudioUnitInitialize(_au);
 		
 		if (status != noErr) {
-			NSLog(@"Could not initialize the output audio unit (%ld)", status);
+			NSLog(@"Could not initialize the output audio unit (%d)", (int)status);
 		}
 	}
 	return self;
@@ -83,7 +83,7 @@ static OSStatus recordingCallback(void *inRefCon,
 								  UInt32 inNumberFrames, 
 								  AudioBufferList *ioData) {
 	
-	MicMonitorAU *self = (MicMonitorAU *) inRefCon;
+	MicMonitorAU *self = (__bridge MicMonitorAU *) inRefCon;
 	
 	AudioBuffer buffer;
 	buffer.mNumberChannels = 1;
@@ -117,14 +117,13 @@ static OSStatus recordingCallback(void *inRefCon,
 
 - (void)dealloc {
 	AudioUnitUninitialize(_au);
-	[super dealloc];
 }
 
 - (void)start {
 	OSStatus status = AudioOutputUnitStart(_au);
 	
 	if (status != noErr) {
-		NSLog(@"Could not start output audio unit (%ld)", status);
+		NSLog(@"Could not start output audio unit (%d)", (int)status);
 	}
 }
 
@@ -132,7 +131,7 @@ static OSStatus recordingCallback(void *inRefCon,
 	OSStatus status = AudioOutputUnitStop(_au);
 	
 	if (status != noErr) {
-		NSLog(@"Could not stop output audio unit (%ld)", status);
+		NSLog(@"Could not stop output audio unit (%d)", (int)status);
 	}
 }
 

@@ -9,32 +9,30 @@
 
 #import "MicMonitorAU.h"
 #import "MicMonitorAV.h"
-#import "TurbineView.h"
 
-@interface TurbineViewController ()
+#import "TurbineScene.h"
 
-- (TurbineView *)turbineView;
-- (MicMonitor *)monitor;
-
-@end
-
-@implementation TurbineViewController
+@implementation TurbineViewController {
+	TurbineScene *_turbineScene;
+}
 
 - (void)loadView {
 	self.view = [self turbineView];
 }
 
-- (void)dealloc {
-	[_turbineView release];
-	[_monitor release];
+- (void)viewDidLoad {
+	[super viewDidLoad];
 	
-	[super dealloc];
+	[[self monitor] start];
 }
 
-- (TurbineView *)turbineView {
+- (SKView *)turbineView {
 	if (!_turbineView) {
-		_turbineView = [[TurbineView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 1024.0f, 748.0f)];
+		_turbineView = [[SKView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 1024.0f, 748.0f)];
 		_turbineView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
+		
+		_turbineScene = [[TurbineScene alloc] initWithSize:_turbineView.bounds.size];
+		[_turbineView presentScene:_turbineScene];
 	}
 	
 	return _turbineView;
@@ -54,16 +52,11 @@
 }
 
 - (void)micMonitorCrossedThreshold:(MicMonitor *)monitor {
-	[_turbineView schedule];
-	[_turbineView accelerate];
+	[_turbineScene accelerate];
 }
 
 - (void)micMonitorFellBelowThreshold:(MicMonitor *)monitor {
-	[_turbineView deaccelerate];
-}
-
-- (void)viewDidAppear:(BOOL)animated {
-	[[self monitor] start];
+	[_turbineScene deaccelerate];
 }
 
 @end

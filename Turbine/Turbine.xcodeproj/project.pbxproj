@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C90869B81388348600D8F083 /* RenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C90869B51388348600D8F083 /* RenderView.m */; };
-		C90869B91388348600D8F083 /* Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = C90869B71388348600D8F083 /* Sprite.m */; };
 		C93163331381DEEA0021FBF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93163321381DEEA0021FBF6 /* UIKit.framework */; };
 		C93163351381DEEA0021FBF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93163341381DEEA0021FBF6 /* Foundation.framework */; };
 		C93163371381DEEA0021FBF6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93163361381DEEA0021FBF6 /* CoreGraphics.framework */; };
@@ -17,29 +15,24 @@
 		C95ED8B817D4F645007EF4E1 /* Turbine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C95ED8B517D4F645007EF4E1 /* Turbine@2x.png */; };
 		C95ED8BA17D51905007EF4E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C95ED8B917D51905007EF4E1 /* Images.xcassets */; };
 		C96C51D81388299A00784187 /* TurbineAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C96C51D31388299A00784187 /* TurbineAppDelegate.m */; };
-		C96C51D91388299A00784187 /* TurbineView.m in Sources */ = {isa = PBXBuildFile; fileRef = C96C51D51388299A00784187 /* TurbineView.m */; };
+		C96C51D91388299A00784187 /* TurbineScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C96C51D51388299A00784187 /* TurbineScene.m */; };
 		C96C51DA1388299A00784187 /* TurbineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96C51D71388299A00784187 /* TurbineViewController.m */; };
 		C96C51E1138829A300784187 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C96C51DC138829A300784187 /* InfoPlist.strings */; };
 		C96C51E2138829A300784187 /* Sky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C96C51DE138829A300784187 /* Sky.jpg */; };
 		C96C51E8138829A800784187 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C96C51E6138829A800784187 /* main.m */; };
-		C96F3D391385D33F00BA7A01 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96F3D381385D33F00BA7A01 /* OpenGLES.framework */; };
 		C98ED40C1395B88E009CF8A1 /* Base.png in Resources */ = {isa = PBXBuildFile; fileRef = C98ED40B1395B88E009CF8A1 /* Base.png */; };
 		C98ED40F1395C38A009CF8A1 /* Turbine.png in Resources */ = {isa = PBXBuildFile; fileRef = C98ED40E1395C38A009CF8A1 /* Turbine.png */; };
 		C9A7325F139732F800335D2B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C9A7325E139732F800335D2B /* Icon.png */; };
 		C9BF664613A7F9A6005BB89B /* MicMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BF664513A7F9A6005BB89B /* MicMonitor.m */; };
 		C9BF664913A7FC09005BB89B /* MicMonitorAV.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BF664813A7FC09005BB89B /* MicMonitorAV.m */; };
 		C9BF664B13A8047D005BB89B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9BF664A13A8047D005BB89B /* AVFoundation.framework */; };
+		C9DBB7451846DB3C007C9F31 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DBB7441846DB3C007C9F31 /* SpriteKit.framework */; };
 		C9EE43A9139130E900BD0897 /* MicMonitorAU.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EE43A8139130E900BD0897 /* MicMonitorAU.m */; };
 		C9EE43AD1391313200BD0897 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EE43AB1391313200BD0897 /* AudioToolbox.framework */; };
 		C9FB4D961384755F000519F8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9FB4D951384755F000519F8 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C90869B31388348600D8F083 /* DrawableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawableObject.h; sourceTree = "<group>"; };
-		C90869B41388348600D8F083 /* RenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderView.h; sourceTree = "<group>"; };
-		C90869B51388348600D8F083 /* RenderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenderView.m; sourceTree = "<group>"; };
-		C90869B61388348600D8F083 /* Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sprite.h; sourceTree = "<group>"; };
-		C90869B71388348600D8F083 /* Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sprite.m; sourceTree = "<group>"; };
 		C931632E1381DEEA0021FBF6 /* Turbine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turbine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93163321381DEEA0021FBF6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C93163341381DEEA0021FBF6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,8 +43,8 @@
 		C95ED8B917D51905007EF4E1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Turbine/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		C96C51D21388299A00784187 /* TurbineAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurbineAppDelegate.h; sourceTree = "<group>"; };
 		C96C51D31388299A00784187 /* TurbineAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TurbineAppDelegate.m; sourceTree = "<group>"; };
-		C96C51D41388299A00784187 /* TurbineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurbineView.h; sourceTree = "<group>"; };
-		C96C51D51388299A00784187 /* TurbineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TurbineView.m; sourceTree = "<group>"; };
+		C96C51D41388299A00784187 /* TurbineScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurbineScene.h; sourceTree = "<group>"; };
+		C96C51D51388299A00784187 /* TurbineScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TurbineScene.m; sourceTree = "<group>"; };
 		C96C51D61388299A00784187 /* TurbineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurbineViewController.h; sourceTree = "<group>"; };
 		C96C51D71388299A00784187 /* TurbineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TurbineViewController.m; sourceTree = "<group>"; };
 		C96C51DD138829A300784187 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -68,6 +61,7 @@
 		C9BF664713A7FC09005BB89B /* MicMonitorAV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MicMonitorAV.h; sourceTree = "<group>"; };
 		C9BF664813A7FC09005BB89B /* MicMonitorAV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MicMonitorAV.m; sourceTree = "<group>"; };
 		C9BF664A13A8047D005BB89B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C9DBB7441846DB3C007C9F31 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		C9EE43A7139130E900BD0897 /* MicMonitorAU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MicMonitorAU.h; sourceTree = "<group>"; };
 		C9EE43A8139130E900BD0897 /* MicMonitorAU.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MicMonitorAU.m; sourceTree = "<group>"; };
 		C9EE43AB1391313200BD0897 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -83,8 +77,8 @@
 				C9BF664B13A8047D005BB89B /* AVFoundation.framework in Frameworks */,
 				C93163371381DEEA0021FBF6 /* CoreGraphics.framework in Frameworks */,
 				C93163351381DEEA0021FBF6 /* Foundation.framework in Frameworks */,
-				C96F3D391385D33F00BA7A01 /* OpenGLES.framework in Frameworks */,
 				C9FB4D961384755F000519F8 /* QuartzCore.framework in Frameworks */,
+				C9DBB7451846DB3C007C9F31 /* SpriteKit.framework in Frameworks */,
 				C93163331381DEEA0021FBF6 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,18 +86,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C90869B21388348600D8F083 /* RenderKit */ = {
-			isa = PBXGroup;
-			children = (
-				C90869B31388348600D8F083 /* DrawableObject.h */,
-				C90869B41388348600D8F083 /* RenderView.h */,
-				C90869B51388348600D8F083 /* RenderView.m */,
-				C90869B61388348600D8F083 /* Sprite.h */,
-				C90869B71388348600D8F083 /* Sprite.m */,
-			);
-			path = RenderKit;
-			sourceTree = SOURCE_ROOT;
-		};
 		C93163231381DEEA0021FBF6 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +108,7 @@
 		C93163311381DEEA0021FBF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C9DBB7441846DB3C007C9F31 /* SpriteKit.framework */,
 				C9EE43AB1391313200BD0897 /* AudioToolbox.framework */,
 				C9BF664A13A8047D005BB89B /* AVFoundation.framework */,
 				C93163361381DEEA0021FBF6 /* CoreGraphics.framework */,
@@ -140,17 +123,11 @@
 		C96C51D11388299A00784187 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C90869B21388348600D8F083 /* RenderKit */,
-				C9BF664413A7F9A6005BB89B /* MicMonitor.h */,
-				C9BF664513A7F9A6005BB89B /* MicMonitor.m */,
-				C9EE43A7139130E900BD0897 /* MicMonitorAU.h */,
-				C9EE43A8139130E900BD0897 /* MicMonitorAU.m */,
-				C9BF664713A7FC09005BB89B /* MicMonitorAV.h */,
-				C9BF664813A7FC09005BB89B /* MicMonitorAV.m */,
+				C9DBB7461846E6BB007C9F31 /* Mic */,
 				C96C51D21388299A00784187 /* TurbineAppDelegate.h */,
 				C96C51D31388299A00784187 /* TurbineAppDelegate.m */,
-				C96C51D41388299A00784187 /* TurbineView.h */,
-				C96C51D51388299A00784187 /* TurbineView.m */,
+				C96C51D41388299A00784187 /* TurbineScene.h */,
+				C96C51D51388299A00784187 /* TurbineScene.m */,
 				C96C51D61388299A00784187 /* TurbineViewController.h */,
 				C96C51D71388299A00784187 /* TurbineViewController.m */,
 			);
@@ -181,6 +158,19 @@
 				C96C51E7138829A800784187 /* Turbine-Prefix.pch */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		C9DBB7461846E6BB007C9F31 /* Mic */ = {
+			isa = PBXGroup;
+			children = (
+				C9BF664413A7F9A6005BB89B /* MicMonitor.h */,
+				C9BF664513A7F9A6005BB89B /* MicMonitor.m */,
+				C9EE43A7139130E900BD0897 /* MicMonitorAU.h */,
+				C9EE43A8139130E900BD0897 /* MicMonitorAU.m */,
+				C9BF664713A7FC09005BB89B /* MicMonitorAV.h */,
+				C9BF664813A7FC09005BB89B /* MicMonitorAV.m */,
+			);
+			name = Mic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,11 +244,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C96C51D81388299A00784187 /* TurbineAppDelegate.m in Sources */,
-				C96C51D91388299A00784187 /* TurbineView.m in Sources */,
+				C96C51D91388299A00784187 /* TurbineScene.m in Sources */,
 				C96C51DA1388299A00784187 /* TurbineViewController.m in Sources */,
 				C96C51E8138829A800784187 /* main.m in Sources */,
-				C90869B81388348600D8F083 /* RenderView.m in Sources */,
-				C90869B91388348600D8F083 /* Sprite.m in Sources */,
 				C9EE43A9139130E900BD0897 /* MicMonitorAU.m in Sources */,
 				C9BF664613A7F9A6005BB89B /* MicMonitor.m in Sources */,
 				C9BF664913A7FC09005BB89B /* MicMonitorAV.m in Sources */,
@@ -282,17 +270,18 @@
 		C931634D1381DEEA0021FBF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -301,14 +290,15 @@
 		C931634E1381DEEA0021FBF6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -325,10 +315,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Support/Turbine-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Resources/Turbine-Info.plist";
 				PRODUCT_NAME = Turbine;
-				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -342,10 +330,8 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Support/Turbine-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Resources/Turbine-Info.plist";
 				PRODUCT_NAME = Turbine;
-				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

@@ -2,20 +2,12 @@
 //  TurbineAppDelegate.m
 //  Turbine
 //
-//  Copyright Matt Rajca 2011. All rights reserved.
+//  Copyright Matt Rajca 2011 - 2013. All rights reserved.
 //
 
 #import "TurbineAppDelegate.h"
 
 #import "TurbineViewController.h"
-
-@interface TurbineAppDelegate ()
-
-- (UIWindow *)window;
-- (TurbineViewController *)viewController;
-
-@end
-
 
 @implementation TurbineAppDelegate
 
@@ -39,13 +31,6 @@
 	}
 	
 	return _viewController;
-}
-
-- (void)dealloc {
-	[_window release];
-	[_viewController release];
-	
-	[super dealloc];
 }
 
 @end
