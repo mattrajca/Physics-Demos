@@ -6,7 +6,7 @@ A variety of physics-based demos for iOS and Mac OS X.
 BounceyBalls
 ------------
 
-The sample code for the [Writing a Bouncing Ball Physics Simulation for iOS](http://mattrajca.com/post/3393477103/writing-a-bouncing-ball-physics-simulation-for-ios) article. `BounceyBalls` utilizes the Chipmunk physics engine and Core Animation. The gravitational field of the simulation is mapped to the accelerometer; as you tilt your iOS device, the balls rendered on-screen move with respect to gravity.
+The sample code for the [Writing a Bouncing Ball Physics Simulation for iOS](http://www.mattrajca.com/2011/05/21/writing-a-bouncing-ball-physics-simulation-for-ios.html) article. `BounceyBalls` utilizes the Chipmunk physics engine and Core Animation. The gravitational field of the simulation is mapped to the accelerometer; as you tilt your iOS device, the balls rendered on-screen move with respect to gravity.
 
 Turbine
 -------
